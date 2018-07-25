@@ -1,0 +1,11 @@
+server:
+  port: 8007
+spring:
+  application:
+    name: cloud-ribbon
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:8001/eureka/
